@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.dao.impl;
+package com.chlx.frsale.dao.impl;
 
 
 import com.xiaowang.mesqle.dao.PuchaseDao;
@@ -18,7 +18,6 @@ import org.springframework.stereotype.Repository;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

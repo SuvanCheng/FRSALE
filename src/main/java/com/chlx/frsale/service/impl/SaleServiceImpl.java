@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.service.impl;
+package com.chlx.frsale.service.impl;
 
 import com.xiaowang.mesqle.dao.SaleDao;
 import com.xiaowang.mesqle.pojo.SCM;
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
 /**
  * 销售模块业务层
  */

@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.controller;
+package com.chlx.frsale.controller;
 
 import com.xiaowang.mesqle.pojo.SCM;
 import com.xiaowang.mesqle.pojo.Sale;
@@ -18,9 +18,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 /**

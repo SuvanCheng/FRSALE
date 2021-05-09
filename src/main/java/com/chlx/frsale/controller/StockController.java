@@ -1,9 +1,8 @@
-package com.xiaowang.mesqle.controller;
+package com.chlx.frsale.controller;
 
 import com.xiaowang.mesqle.pojo.CMP;
 import com.xiaowang.mesqle.pojo.MS;
 import com.xiaowang.mesqle.pojo.SCM;
-import com.xiaowang.mesqle.pojo.Stock;
 import com.xiaowang.mesqle.service.PurchaseService;
 import com.xiaowang.mesqle.service.SaleService;
 import com.xiaowang.mesqle.service.StockService;

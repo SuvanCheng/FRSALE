@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.service.impl;
+package com.chlx.frsale.service.impl;
 
 import com.xiaowang.mesqle.dao.CustDao;
 import com.xiaowang.mesqle.pojo.Customer;

@@ -1,19 +1,15 @@
-package com.xiaowang.mesqle.controller;
+package com.chlx.frsale.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.xiaowang.mesqle.pojo.Customer;
 import com.xiaowang.mesqle.service.CustService;
-import com.xiaowang.mesqle.service.SaleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.List;
 
 @Controller
 @RequestMapping("/Cust")

@@ -1,5 +1,6 @@
-package com.xiaowang.mesqle.pojo;
+package com.chlx.frsale.pojo;
 import java.sql.Date;
+
 public class Purchase {
     private int pid;
     private int uid;

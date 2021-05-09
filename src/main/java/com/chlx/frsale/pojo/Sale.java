@@ -1,6 +1,4 @@
-package com.xiaowang.mesqle.pojo;
-
-import org.springframework.format.annotation.DateTimeFormat;
+package com.chlx.frsale.pojo;
 
 import java.sql.Date;
 

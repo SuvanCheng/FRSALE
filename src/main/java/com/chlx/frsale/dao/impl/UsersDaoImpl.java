@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.dao.impl;
+package com.chlx.frsale.dao.impl;
 
 import com.xiaowang.mesqle.dao.UsersDao;
 import com.xiaowang.mesqle.pojo.User;

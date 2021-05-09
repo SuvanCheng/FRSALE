@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.pojo;
+package com.chlx.frsale.pojo;
 
 public class Customer {
     private int cid;

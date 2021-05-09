@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.dao.impl;
+package com.chlx.frsale.dao.impl;
 
 import com.xiaowang.mesqle.dao.SaleDao;
 import com.xiaowang.mesqle.pojo.SCM;
@@ -15,6 +15,7 @@ import org.springframework.stereotype.Repository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+
 @Repository
 public class SaleDaoImpl implements SaleDao {
     @Autowired

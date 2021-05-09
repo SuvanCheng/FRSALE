@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.controller;
+package com.chlx.frsale.controller;
 import com.xiaowang.mesqle.pojo.Medicine;
 import com.xiaowang.mesqle.service.MedicineService;
 import org.springframework.beans.factory.annotation.Autowired;

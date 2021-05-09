@@ -1,14 +1,11 @@
-package com.xiaowang.mesqle.dao.impl;
+package com.chlx.frsale.dao.impl;
 
 import com.xiaowang.mesqle.dao.CustDao;
 import com.xiaowang.mesqle.pojo.Customer;
-import com.xiaowang.mesqle.pojo.Sale;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

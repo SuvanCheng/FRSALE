@@ -1,4 +1,4 @@
-package com.xiaowang.mesqle.config;
+package com.chlx.frsale.config;
 
 /**
  * JDBC配置信息属性类
