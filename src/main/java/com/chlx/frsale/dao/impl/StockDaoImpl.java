@@ -88,9 +88,9 @@ public class StockDaoImpl implements StockDao {
         Row titleRow = sheet.createRow(0);//创建第一行，起始为0
         titleRow.createCell(0).setCellValue("序号");//第一列
         titleRow.createCell(1).setCellValue("库存编码");
-        titleRow.createCell(2).setCellValue("药品编码");
-        titleRow.createCell(3).setCellValue("药品名称");
-        titleRow.createCell(4).setCellValue("药品数量");
+        titleRow.createCell(2).setCellValue("水果编码");
+        titleRow.createCell(3).setCellValue("水果名称");
+        titleRow.createCell(4).setCellValue("水果数量");
         int cell = 1;
         for (MS ms : list) {
             Row row = sheet.createRow(cell);//从第二行开始保存数据

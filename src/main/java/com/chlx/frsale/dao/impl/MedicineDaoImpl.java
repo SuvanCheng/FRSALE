@@ -16,7 +16,7 @@ public class MedicineDaoImpl implements MedicineDao {
     private JdbcTemplate jdbcTemplate;
 
     /**
-     * 插入药品
+     * 插入水果
      * @param medicine
      */
     @Override

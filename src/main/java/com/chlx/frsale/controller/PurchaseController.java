@@ -38,9 +38,9 @@ public class PurchaseController {
     public String addPurchase(Purchase purchase, HttpServletRequest request){
         HttpSession session= request.getSession();
         int role = (int)session.getAttribute("type");
-        //判断药品和客户是否已存在
+        //判断水果和客户是否已存在
         Medicine medicine = this.medicineService.findMedicineById(purchase.getMid());
-        System.out.println("采购的药品名称是：" + medicine.getMname());
+        System.out.println("采购的水果名称是：" + medicine.getMname());
         Customer customer = this.custService.findCustById(purchase.getCid());
         System.out.println("采购的客户名称是：" + customer.getCname());
         if(medicine.getMname() == null){

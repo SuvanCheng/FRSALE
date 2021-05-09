@@ -60,7 +60,7 @@ public class StockController {
     }
 
     /**
-     * 通过药品名称进行查询
+     * 通过水果名称进行查询
      * @param mname
      * @param model
      * @return

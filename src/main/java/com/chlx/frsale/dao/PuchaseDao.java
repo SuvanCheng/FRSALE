@@ -14,7 +14,7 @@ public interface PuchaseDao {
     void updatePurchaseFlag(Purchase purchase);
     void updatePurchaseInfo(Purchase purchase);
 
-    //根据客户名称、药品名称、订单日期进行查询
+    //根据客户名称、水果名称、订单日期进行查询
     List<Purchase> selectPurchaseByCname(String cname);
     List<Purchase> selectPurchaseByMname(String mname);
     List<Purchase> selectPurchaseByPdate(String pdate, String pdateend);

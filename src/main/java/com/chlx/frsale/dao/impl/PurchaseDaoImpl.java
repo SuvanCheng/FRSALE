@@ -297,8 +297,8 @@ public class PurchaseDaoImpl implements PuchaseDao {
         titleRow.createCell(1).setCellValue("订单id");
         titleRow.createCell(2).setCellValue("客户id");
         titleRow.createCell(3).setCellValue("客户姓名");
-        titleRow.createCell(4).setCellValue("药品id");
-        titleRow.createCell(5).setCellValue("药品名称");
+        titleRow.createCell(4).setCellValue("水果id");
+        titleRow.createCell(5).setCellValue("水果名称");
         titleRow.createCell(6).setCellValue("采购数量");
         titleRow.createCell(7).setCellValue("采购单价");
         titleRow.createCell(8).setCellValue("采购日期");

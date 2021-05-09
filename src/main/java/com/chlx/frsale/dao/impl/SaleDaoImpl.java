@@ -98,7 +98,7 @@ public class SaleDaoImpl implements SaleDao {
     @Override
     public List<SCM> findSale(String cname, String mname, String date1, String date2) {
         String sql = "select s.sid,s.uid,s.cid,s.mid,s.snum,s.sdate,s.samount,s.sflag,c.cname,m.mname from T_sale s,T_customer c,T_medicine m where s.cid = c.cid and s.mid = m.mid "+"and c.cname='李四' and m.mname='复方甘草含片' and s.sdate>='"+date1+"' and s.sdate<='2020-6-13'";
-        //System.out.println("客户名："+cname+"药品名"+mname+"起始时间"+date1+"结束时间"+date2);
+        //System.out.println("客户名："+cname+"水果名"+mname+"起始时间"+date1+"结束时间"+date2);
         if(cname==""&& mname=="" && date1=="" &&date2==""){
             sql = "select s.sid,s.uid,s.cid,s.mid,s.snum,s.sdate,s.samount,s.sflag,c.cname,m.mname from T_sale s,T_customer c,T_medicine m where s.cid = c.cid and s.mid = m.mid ";
         }
@@ -185,8 +185,8 @@ public class SaleDaoImpl implements SaleDao {
         titleRow.createCell(1).setCellValue("订单id");
         titleRow.createCell(2).setCellValue("客户id");
         titleRow.createCell(3).setCellValue("客户姓名");
-        titleRow.createCell(4).setCellValue("药品id");
-        titleRow.createCell(5).setCellValue("药品名");
+        titleRow.createCell(4).setCellValue("水果id");
+        titleRow.createCell(5).setCellValue("水果名");
         titleRow.createCell(6).setCellValue("数量");
         titleRow.createCell(7).setCellValue("时间");
         titleRow.createCell(8).setCellValue("金额");
