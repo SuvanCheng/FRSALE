@@ -1,8 +1,8 @@
 package com.chlx.frsale.controller;
 
-import com.xiaowang.mesqle.pojo.SCM;
-import com.xiaowang.mesqle.pojo.Sale;
-import com.xiaowang.mesqle.service.SaleService;
+import com.chlx.frsale.pojo.SCM;
+import com.chlx.frsale.pojo.Sale;
+import com.chlx.frsale.service.SaleService;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

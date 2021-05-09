@@ -1,8 +1,8 @@
 package com.chlx.frsale.dao;
 
 
-import com.xiaowang.mesqle.pojo.CMP;
-import com.xiaowang.mesqle.pojo.Purchase;
+import com.chlx.frsale.pojo.CMP;
+import com.chlx.frsale.pojo.Purchase;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.util.List;

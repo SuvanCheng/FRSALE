@@ -1,8 +1,8 @@
 package com.chlx.frsale.dao.impl;
 
-import com.xiaowang.mesqle.dao.SaleDao;
-import com.xiaowang.mesqle.pojo.SCM;
-import com.xiaowang.mesqle.pojo.Sale;
+import com.chlx.frsale.dao.SaleDao;
+import com.chlx.frsale.pojo.SCM;
+import com.chlx.frsale.pojo.Sale;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;

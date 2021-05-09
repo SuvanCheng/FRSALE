@@ -1,6 +1,6 @@
 package com.chlx.frsale.dao;
 
-import com.xiaowang.mesqle.pojo.Medicine;
+import com.chlx.frsale.pojo.Medicine;
 
 public interface MedicineDao {
     void insertMedicine(Medicine medicine);

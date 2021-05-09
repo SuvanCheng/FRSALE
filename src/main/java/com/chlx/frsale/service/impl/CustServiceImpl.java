@@ -1,8 +1,8 @@
 package com.chlx.frsale.service.impl;
 
-import com.xiaowang.mesqle.dao.CustDao;
-import com.xiaowang.mesqle.pojo.Customer;
-import com.xiaowang.mesqle.service.CustService;
+import com.chlx.frsale.dao.CustDao;
+import com.chlx.frsale.pojo.Customer;
+import com.chlx.frsale.service.CustService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

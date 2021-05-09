@@ -1,7 +1,7 @@
 package com.chlx.frsale.controller;
 
-import com.xiaowang.mesqle.pojo.Customer;
-import com.xiaowang.mesqle.service.CustService;
+import com.chlx.frsale.pojo.Customer;
+import com.chlx.frsale.service.CustService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

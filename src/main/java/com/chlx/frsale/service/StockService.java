@@ -1,6 +1,6 @@
 package com.chlx.frsale.service;
 
-import com.xiaowang.mesqle.pojo.MS;
+import com.chlx.frsale.pojo.MS;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.util.List;

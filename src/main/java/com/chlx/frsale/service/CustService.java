@@ -1,6 +1,6 @@
 package com.chlx.frsale.service;
 
-import com.xiaowang.mesqle.pojo.Customer;
+import com.chlx.frsale.pojo.Customer;
 
 public interface CustService {
     Customer findCustById(int cid);

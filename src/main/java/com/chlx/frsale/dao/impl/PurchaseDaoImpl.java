@@ -1,11 +1,11 @@
 package com.chlx.frsale.dao.impl;
 
 
-import com.xiaowang.mesqle.dao.PuchaseDao;
-import com.xiaowang.mesqle.pojo.CMP;
-import com.xiaowang.mesqle.pojo.Customer;
-import com.xiaowang.mesqle.pojo.Medicine;
-import com.xiaowang.mesqle.pojo.Purchase;
+import com.chlx.frsale.dao.PuchaseDao;
+import com.chlx.frsale.pojo.CMP;
+import com.chlx.frsale.pojo.Customer;
+import com.chlx.frsale.pojo.Medicine;
+import com.chlx.frsale.pojo.Purchase;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;

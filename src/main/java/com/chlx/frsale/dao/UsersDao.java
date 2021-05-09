@@ -1,6 +1,6 @@
 package com.chlx.frsale.dao;
 
-import com.xiaowang.mesqle.pojo.User;
+import com.chlx.frsale.pojo.User;
 
 import java.util.List;
 

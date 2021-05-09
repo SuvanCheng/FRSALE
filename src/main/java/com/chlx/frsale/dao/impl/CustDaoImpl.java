@@ -1,7 +1,7 @@
 package com.chlx.frsale.dao.impl;
 
-import com.xiaowang.mesqle.dao.CustDao;
-import com.xiaowang.mesqle.pojo.Customer;
+import com.chlx.frsale.dao.CustDao;
+import com.chlx.frsale.pojo.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;

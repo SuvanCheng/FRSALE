@@ -1,6 +1,6 @@
 package com.chlx.frsale.dao;
 
-import com.xiaowang.mesqle.pojo.Customer;
+import com.chlx.frsale.pojo.Customer;
 
 public interface CustDao {
     Customer findCustById(int cid);

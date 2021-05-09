@@ -1,8 +1,8 @@
 package com.chlx.frsale.service.impl;
 
-import com.xiaowang.mesqle.dao.MedicineDao;
-import com.xiaowang.mesqle.pojo.Medicine;
-import com.xiaowang.mesqle.service.MedicineService;
+import com.chlx.frsale.dao.MedicineDao;
+import com.chlx.frsale.pojo.Medicine;
+import com.chlx.frsale.service.MedicineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

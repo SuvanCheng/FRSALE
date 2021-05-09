@@ -1,8 +1,8 @@
 package com.chlx.frsale.service.impl;
 
-import com.xiaowang.mesqle.dao.StockDao;
-import com.xiaowang.mesqle.pojo.MS;
-import com.xiaowang.mesqle.service.StockService;
+import com.chlx.frsale.dao.StockDao;
+import com.chlx.frsale.pojo.MS;
+import com.chlx.frsale.service.StockService;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
