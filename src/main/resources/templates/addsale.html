@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="icon" th:href="@{/public/favicon.ico}" type="image/x-icon"/>
+<link rel="bookmark" th:href="@{/public/favicon.ico}" type="image/x-icon"/>
+  <head>
+    <title>addSale</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="/resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="/data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="/files/addsale/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="/resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="/resources/scripts/axure/axQuery.js"></script>
+    <script src="/resources/scripts/axure/globals.js"></script>
+    <script src="/resources/scripts/axutils.js"></script>
+    <script src="/resources/scripts/axure/annotation.js"></script>
+    <script src="/resources/scripts/axure/axQuery.std.js"></script>
+    <script src="/resources/scripts/axure/doc.js"></script>
+    <script src="/resources/scripts/messagecenter.js"></script>
+    <script src="/resources/scripts/axure/events.js"></script>
+    <script src="/resources/scripts/axure/recording.js"></script>
+    <script src="/resources/scripts/axure/action.js"></script>
+    <script src="/resources/scripts/axure/expr.js"></script>
+    <script src="/resources/scripts/axure/geometry.js"></script>
+    <script src="/resources/scripts/axure/flyout.js"></script>
+    <script src="/resources/scripts/axure/model.js"></script>
+    <script src="/resources/scripts/axure/repeater.js"></script>
+    <script src="/resources/scripts/axure/sto.js"></script>
+    <script src="/resources/scripts/axure/utils.temp.js"></script>
+    <script src="/resources/scripts/axure/variables.js"></script>
+    <script src="/resources/scripts/axure/drag.js"></script>
+    <script src="/resources/scripts/axure/move.js"></script>
+    <script src="/resources/scripts/axure/visibility.js"></script>
+    <script src="/resources/scripts/axure/style.js"></script>
+    <script src="/resources/scripts/axure/adaptive.js"></script>
+    <script src="/resources/scripts/axure/tree.js"></script>
+    <script src="/resources/scripts/axure/init.temp.js"></script>
+    <script src="/resources/scripts/axure/legacy.js"></script>
+    <script src="/resources/scripts/axure/viewer.js"></script>
+    <script src="/resources/scripts/axure/math.js"></script>
+    <script src="/resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="/data/document.js"></script>
+    <script src="/files/addsale/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return '/resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return '/resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return '/resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- addSale_form (组合) -->
+      <form id="u153" th:action="@{/sale/addSale}" method="post" class="ax_default" data-label="addSale_form" data-left="10" data-top="10" data-width="1367" data-height="600">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u154" class="ax_default box_1">
+          <div id="u154_div" class=""></div>
+          <div id="u154_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- form (组合) -->
+        <form th:action="@{/sale/addSale}" method="post">
+        <div id="u155" class="ax_default" data-label="form" data-left="544" data-top="106" data-width="300" data-height="408">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u156" class="ax_default box_1">
+            <div id="u156_div" class=""></div>
+            <div id="u156_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u157" class="ax_default label">
+            <div id="u157_div" class=""></div>
+            <div id="u157_text" class="text ">
+              <p><span>销售员ID：</span></p>
+            </div>
+          </div>
+
+          <!-- uid (文本框) -->
+          <div id="u158" class="ax_default text_field" data-label="uid">
+            <div id="u158_div" class=""></div>
+            <input id="u158_input" name="uid" type="text" th:value="${#httpSession.getAttribute('uid')}" class="u158_input" readonly/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u159" class="ax_default label">
+            <div id="u159_div" class=""></div>
+            <div id="u159_text" class="text ">
+              <p><span>销售姓名：</span></p>
+            </div>
+          </div>
+
+          <!-- username (文本框) -->
+          <div id="u160" class="ax_default text_field" data-label="username">
+            <div id="u160_div" class=""></div>
+            <input id="u160_input" name="username" type="text" th:value="${#httpSession.getAttribute('usernamename')}" class="u160_input" readonly/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u161" class="ax_default label">
+            <div id="u161_div" class=""></div>
+            <div id="u161_text" class="text ">
+              <p><span>客户ID：</span></p>
+            </div>
+          </div>
+
+          <!-- cid (文本框) -->
+          <div id="u162" class="ax_default text_field" data-label="cid">
+            <div id="u162_div" class=""></div>
+            <input id="u162_input" name="cid" type="number" value="" class="u162_input"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u163" class="ax_default label">
+            <div id="u163_div" class=""></div>
+            <div id="u163_text" class="text ">
+              <p><span>客户姓名：</span></p>
+            </div>
+          </div>
+
+          <!-- cname (文本框) -->
+          <div id="u164" class="ax_default text_field" data-label="cname">
+            <div id="u164_div" class=""></div>
+            <input id="u164_input" name="cname" type="text" value="" class="u164_input"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u165" class="ax_default label">
+            <div id="u165_div" class=""></div>
+            <div id="u165_text" class="text ">
+              <p><span>药品ID：</span></p>
+            </div>
+          </div>
+
+          <!-- mid (文本框) -->
+          <div id="u166" class="ax_default text_field" data-label="mid">
+            <div id="u166_div" class=""></div>
+            <input id="u166_input" name="mid" type="number" value="" class="u166_input"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u167" class="ax_default label">
+            <div id="u167_div" class=""></div>
+            <div id="u167_text" class="text ">
+              <p><span>药品名称：</span></p>
+            </div>
+          </div>
+
+          <!-- mname (文本框) -->
+          <div id="u168" class="ax_default text_field" data-label="mname">
+            <div id="u168_div" class=""></div>
+            <input id="u168_input" name="mname" type="text" value="" class="u168_input"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u169" class="ax_default label">
+            <div id="u169_div" class=""></div>
+            <div id="u169_text" class="text ">
+              <p><span>销售数量：</span></p>
+            </div>
+          </div>
+
+          <!-- snum (文本框) -->
+          <div id="u170" class="ax_default text_field" data-label="snum">
+            <div id="u170_div" class=""></div>
+            <input id="u170_input" name="snum" type="number" value="" class="u170_input"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u171" class="ax_default label">
+            <div id="u171_div" class=""></div>
+            <div id="u171_text" class="text ">
+              <p><span>订单日期：</span></p>
+            </div>
+          </div>
+
+          <!-- sdate (文本框) -->
+          <div id="u172" class="ax_default text_field" data-label="sdate">
+            <div id="u172_div" class=""></div>
+            <input id="u172_input" name="sdate" type="text" value="" class="u172_input"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u173" class="ax_default label">
+            <div id="u173_div" class=""></div>
+            <div id="u173_text" class="text ">
+              <p><span>订单金额：</span></p>
+            </div>
+          </div>
+
+          <!-- samount (文本框) -->
+          <div id="u174" class="ax_default text_field" data-label="samount">
+            <div id="u174_div" class=""></div>
+            <input id="u174_input" name="samount" type="number" value="" class="u174_input"/>
+          </div>
+
+          <!-- addSale_btn (矩形) -->
+          <div id="u175" class="ax_default primary_button" data-label="addSale_btn">
+            <div id="u175_div" class=""></div>
+            <div id="u175_text" class="text ">
+              <p><span><input type="submit" value="确认添加"/></span></p>
+            </div>
+          </div>
+
+        </div>
+    </form>
+        <!-- Unnamed (矩形) -->
+        <div id="u176" class="ax_default label">
+          <div id="u176_div" class=""></div>
+          <div id="u176_text" class="text ">
+            <p><span>*</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u177" class="ax_default label">
+          <div id="u177_div" class=""></div>
+          <div id="u177_text" class="text ">
+            <p><span>*</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u178" class="ax_default label">
+          <div id="u178_div" class=""></div>
+          <div id="u178_text" class="text ">
+            <p><span>*</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u179" class="ax_default label">
+          <div id="u179_div" class=""></div>
+          <div id="u179_text" class="text ">
+            <p><span>*</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u180" class="ax_default label">
+          <div id="u180_div" class=""></div>
+          <div id="u180_text" class="text ">
+            <p><span>*</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u181" class="ax_default label">
+          <div id="u181_div" class=""></div>
+          <div id="u181_text" class="text ">
+            <p><span>*</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (menu0) -->
+
+        <!-- Unnamed (矩形) -->
+        <div id="u183" class="ax_default box_3">
+          <div id="u183_div" class=""></div>
+          <div id="u183_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (菜单) -->
+        <div id="u184" class="ax_default">
+          <img id="u184_menu" class="img " src="/images/addcust/u26_menu.png" alt="u184_menu"/>
+
+          <!-- Unnamed (表格) -->
+          <div id="u185" class="ax_default">
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u186" class="ax_default menu_item">
+              <img id="u186_img" class="img " src="/images/addcust/u28.png"/>
+              <div id="u186_text" class="text ">
+                <p><span><a th:href="@{/admin}">首页</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u187" class="ax_default menu_item">
+              <img id="u187_img" class="img " src="/images/addcust/u28.png"/>
+              <div id="u187_text" class="text ">
+                <p><span><a th:href="@{/addCust}">添加客户</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u188" class="ax_default menu_item">
+              <img id="u188_img" class="img " src="/images/addcust/u28.png"/>
+              <div id="u188_text" class="text ">
+                <p><span><a th:href="@{/addNewMedicine}">添加药品</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u189" class="ax_default menu_item">
+              <img id="u189_img" class="img " src="/images/addcust/u28.png"/>
+              <div id="u189_text" class="text ">
+                <p><span>销售管理</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u190" class="ax_default menu_item">
+              <img id="u190_img" class="img " src="/images/addcust/u28.png"/>
+              <div id="u190_text" class="text ">
+                <p><span>进货管理</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u191" class="ax_default menu_item">
+              <img id="u191_img" class="img " src="/images/addcust/u28.png"/>
+              <div id="u191_text" class="text ">
+                <p><span>库房管理</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u192" class="ax_default menu_item">
+              <img id="u192_img" class="img " src="/images/addcust/u34.png"/>
+              <div id="u192_text" class="text ">
+                <p><span>系统管理</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单) -->
+          <div id="u193" class="ax_default sub_menu">
+            <img id="u193_menu" class="img " src="/images/addcust/u35_menu.png" alt="u193_menu"/>
+
+            <!-- Unnamed (表格) -->
+            <div id="u194" class="ax_default">
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u195" class="ax_default menu_item">
+                <img id="u195_img" class="img " src="/images/addcust/u37.png"/>
+                <div id="u195_text" class="text ">
+                  <p><span><a th:href="@{/addSale}">销售登记</a></span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u196" class="ax_default menu_item">
+                <img id="u196_img" class="img " src="/images/addcust/u37.png"/>
+                <div id="u196_text" class="text ">
+                  <p><span><a th:href="@{/sale/findSaleAll}">销售列表</a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单) -->
+          <div id="u197" class="ax_default sub_menu">
+            <img id="u197_menu" class="img " src="/images/addcust/u35_menu.png" alt="u197_menu"/>
+
+            <!-- Unnamed (表格) -->
+            <div id="u198" class="ax_default">
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u199" class="ax_default menu_item">
+                <img id="u199_img" class="img " src="/images/addcust/u37.png"/>
+                <div id="u199_text" class="text ">
+                  <p><span><a th:href="@{/addPurchase}">采购登记</a></span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u200" class="ax_default menu_item">
+                <img id="u200_img" class="img " src="/images/addcust/u42.png"/>
+                <div id="u200_text" class="text ">
+                  <p><span><a th:href="@{/purchase/findAllPurchase}">采购订单列表</a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单) -->
+          <div id="u201" class="ax_default sub_menu">
+            <img id="u201_menu" class="img " src="/images/addcust/u43_menu.png" alt="u201_menu"/>
+
+            <!-- Unnamed (表格) -->
+            <div id="u202" class="ax_default">
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u203" class="ax_default menu_item">
+                <img id="u203_img" class="img " src="/images/addcust/u37.png"/>
+                <div id="u203_text" class="text ">
+                  <p><span><a th:href="@{/stock/listStock}">库存列表</a></span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u204" class="ax_default menu_item">
+                <img id="u204_img" class="img " src="/images/addcust/u46.png"/>
+                <div id="u204_text" class="text ">
+                  <p><span><a th:href="@{/stock/putStock}">入库处理</a></span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u205" class="ax_default menu_item">
+                <img id="u205_img" class="img " src="/images/addcust/u37.png"/>
+                <div id="u205_text" class="text ">
+                  <p><span><a th:href="@{/stock/outStock}">发货处理</a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单) -->
+          <div id="u206" class="ax_default sub_menu">
+            <img id="u206_menu" class="img " src="/images/addcust/u48_menu.png" alt="u206_menu"/>
+
+            <!-- Unnamed (表格) -->
+            <div id="u207" class="ax_default">
+
+              <!-- Unnamed (菜单项) -->
+              <div id="u208" class="ax_default menu_item">
+                <img id="u208_img" class="img " src="/images/addcust/u37.png"/>
+                <div id="u208_text" class="text ">
+                  <p><span><a th:href="@{/sysUser/showAllUsers}">权限管理</a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u209" class="ax_default label">
+          <div id="u209_div" class=""></div>
+          <div id="u209_text" class="text ">
+            <p><span th:text="欢迎 "></span>
+            <span th:text="${#httpSession.getAttribute('usernamename')}"></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u210" class="ax_default link_button">
+          <div id="u210_div" class=""></div>
+          <div id="u210_text" class="text ">
+            <p><span><a th:href="@{/login}">注销</a></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u211" class="ax_default label">
+          <div id="u211_div" class=""></div>
+          <div id="u211_text" class="text ">
+            <p><span>订单管理系统</span></p>
+          </div>
+        </div>
+        <div id="u182" style="display:none; visibility:hidden;"></div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u212" class="ax_default label">
+          <div id="u212_div" class=""></div>
+          <div id="u212_text" class="text ">
+            <p><span>当前位置：销售订单登记</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (menu0) -->
+
+      <!-- Unnamed (矩形) -->
+      <div id="u214" class="ax_default box_3">
+        <div id="u214_div" class=""></div>
+        <div id="u214_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菜单) -->
+      <div id="u215" class="ax_default">
+        <img id="u215_menu" class="img " src="/images/addcust/u26_menu.png" alt="u215_menu"/>
+
+        <!-- Unnamed (表格) -->
+        <div id="u216" class="ax_default">
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u217" class="ax_default menu_item">
+            <img id="u217_img" class="img " src="/images/addcust/u28.png"/>
+            <div id="u217_text" class="text ">
+              <p><span><a th:href="@{/admin}">首页</a></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u218" class="ax_default menu_item">
+            <img id="u218_img" class="img " src="/images/addcust/u28.png"/>
+            <div id="u218_text" class="text ">
+              <p><span><a th:href="@{/addCust}">添加客户</a></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u219" class="ax_default menu_item">
+            <img id="u219_img" class="img " src="/images/addcust/u28.png"/>
+            <div id="u219_text" class="text ">
+              <p><span><a th:href="@{/addNewMedicine}">添加药品</a></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u220" class="ax_default menu_item">
+            <img id="u220_img" class="img " src="/images/addcust/u28.png"/>
+            <div id="u220_text" class="text ">
+              <p><span>销售管理</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u221" class="ax_default menu_item">
+            <img id="u221_img" class="img " src="/images/addcust/u28.png"/>
+            <div id="u221_text" class="text ">
+              <p><span>进货管理</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u222" class="ax_default menu_item">
+            <img id="u222_img" class="img " src="/images/addcust/u28.png"/>
+            <div id="u222_text" class="text ">
+              <p><span>库房管理</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (菜单项) -->
+          <div id="u223" class="ax_default menu_item">
+            <img id="u223_img" class="img " src="/images/addcust/u34.png"/>
+            <div id="u223_text" class="text ">
+              <p><span>系统管理</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (菜单) -->
+        <div id="u224" class="ax_default sub_menu">
+          <img id="u224_menu" class="img " src="/images/addcust/u35_menu.png" alt="u224_menu"/>
+
+          <!-- Unnamed (表格) -->
+          <div id="u225" class="ax_default">
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u226" class="ax_default menu_item">
+              <img id="u226_img" class="img " src="/images/addcust/u37.png"/>
+              <div id="u226_text" class="text ">
+                <p><span><a th:href="@{/addSale}">销售登记</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u227" class="ax_default menu_item">
+              <img id="u227_img" class="img " src="/images/addcust/u37.png"/>
+              <div id="u227_text" class="text ">
+                <p><span><a th:href="@{/sale/findSaleAll}">销售列表</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (菜单) -->
+        <div id="u228" class="ax_default sub_menu">
+          <img id="u228_menu" class="img " src="/images/addcust/u35_menu.png" alt="u228_menu"/>
+
+          <!-- Unnamed (表格) -->
+          <div id="u229" class="ax_default">
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u230" class="ax_default menu_item">
+              <img id="u230_img" class="img " src="/images/addcust/u37.png"/>
+              <div id="u230_text" class="text ">
+                <p><span><a th:href="@{/addPurchase}">采购登记</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u231" class="ax_default menu_item">
+              <img id="u231_img" class="img " src="/images/addcust/u42.png"/>
+              <div id="u231_text" class="text ">
+                <p><span><a th:href="@{/purchase/findAllPurchase}">采购订单列表</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (菜单) -->
+        <div id="u232" class="ax_default sub_menu">
+          <img id="u232_menu" class="img " src="/images/addcust/u43_menu.png" alt="u232_menu"/>
+
+          <!-- Unnamed (表格) -->
+          <div id="u233" class="ax_default">
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u234" class="ax_default menu_item">
+              <img id="u234_img" class="img " src="/images/addcust/u37.png"/>
+              <div id="u234_text" class="text ">
+                <p><span><a th:href="@{/stock/listStock}">库存列表</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u235" class="ax_default menu_item">
+              <img id="u235_img" class="img " src="/images/addcust/u46.png"/>
+              <div id="u235_text" class="text ">
+                <p><span><a th:href="@{/stock/putStock}">入库处理</a></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u236" class="ax_default menu_item">
+              <img id="u236_img" class="img " src="/images/addcust/u37.png"/>
+              <div id="u236_text" class="text ">
+                <p><span><a th:href="@{/stock/outStock}">发货处理</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (菜单) -->
+        <div id="u237" class="ax_default sub_menu">
+          <img id="u237_menu" class="img " src="/images/addcust/u48_menu.png" alt="u237_menu"/>
+
+          <!-- Unnamed (表格) -->
+          <div id="u238" class="ax_default">
+
+            <!-- Unnamed (菜单项) -->
+            <div id="u239" class="ax_default menu_item">
+              <img id="u239_img" class="img " src="/images/addcust/u37.png"/>
+              <div id="u239_text" class="text ">
+                <p><span><a th:href="@{/sysUser/showAllUsers}">权限管理</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u240" class="ax_default label">
+        <div id="u240_div" class=""></div>
+        <div id="u240_text" class="text ">
+          <p><span th:text="欢迎 "></span>
+            <span th:text="${#httpSession.getAttribute('usernamename')}"></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u241" class="ax_default link_button">
+        <div id="u241_div" class=""></div>
+        <div id="u241_text" class="text ">
+          <p><span><a th:href="@{/login}">注销</a></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u242" class="ax_default label">
+        <div id="u242_div" class=""></div>
+        <div id="u242_text" class="text ">
+          <p><span>订单管理系统</span></p>
+        </div>
+      </div>
+      <div id="u213" style="display:none; visibility:hidden;"></div>
+    </div>
+    <script src="/resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
